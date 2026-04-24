@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!--NAVBAR-->
+   <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <li class="nav-item">
@@ -31,32 +31,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="galeria.html">Galería</a>
+                        <a class="nav-link px-3 active" href="galeria.html">Galería</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="quienessomos.html">Quienes somos</a>
-                    </li>
-                    <!--<li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Noticias
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="noticia1.html">Cerro Pintor</a></li>
-                            <li><a class="dropdown-item" href="noticia2.html">Cerro Manquehue</a></li>
-                            <li><a class="dropdown-item" href="noticia3.html">Cerro Tupungato</a></li>
-                            <li>
-                        </ul>
-                    </li>-->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="inscripcion.html" tabindex="-1"
-                            aria-disabled="true">Inscripción</a>
+                        <a class="nav-link px-3" href="quienessomos.html">Quiénes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="preguntas.html" tabindex="-1"
-                            aria-disabled="true">Preguntas</a>
+                        <a class="nav-link px-3" href="preguntas.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-dark rounded-pill px-4" href="inscripcion.html">Inscripción</a>
                     </li>
                 </ul>
             </div>
@@ -64,30 +50,42 @@
     </nav>
 
     <!--QUIEN SOY-->
-    <div class="container">
-        <figure>
-            <blockquote class="blockquote">
-                <h1>¿Quién <b>soy?</b></h1>
-            </blockquote>
-        </figure>
-        <div class="card mb-3">
-            <img src="img/lucy.png" class="card-img-top w-50 mx-auto d-block" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Carolina Peñaloza Delgado</h5>
-                <p class="card-text">Soy bibliotecóloga y mediadora de lectura, apasionada por los libros en todas sus
-                    formas: desde las historias que contienen hasta los objetos que los resguardan.
-                    Mi trabajo une el mundo de la lectura con el oficio artesanal de la encuadernación. Creo libretas
-                    hechas a mano, únicas, pensadas para acompañar procesos creativos, personales y cotidianos. Cada
-                    pieza está elaborada con dedicación, cuidando los detalles y valorando los tiempos del trabajo
-                    manual.
-                    Además, desarrollo talleres de encuadernación como espacios de creación y pausa, donde comparto
-                    técnicas, saberes y el amor por el hacer con las manos, generando instancias de encuentro,
-                    aprendizaje y expresión.
-                    Este proyecto nace desde el deseo de hacer una pausa y reconectar con lo esencial: el valor de lo
-                    hecho a mano, el tiempo propio y la posibilidad de crear.</p>
+    <div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold display-5">¿Quién <span style="color: #cbbc83;">soy?</span></h1>
+        <div class="mx-auto" style="width: 50px; height: 3px; background-color: #cbbc83;"></div>
+    </div>
+
+    <div class="row align-items-center g-5">
+        <div class="col-md-5 text-center">
+            <div class="position-relative d-inline-block">
+                <img src="img/lucy.png" class="img-fluid rounded-circle shadow-lg border border-5 border-white" 
+                     alt="Carolina Peñaloza" style="width: 300px; height: 300px; object-fit: cover;">
+                <div class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-dark p-3 shadow" style="z-index: 1;">
+                    🎨
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <h2 class="fw-bold mb-3">Carolina Peñaloza Delgado</h2>
+            <h6 class="text-uppercase ls-2 text-muted mb-4" style="letter-spacing: 2px;">Bibliotecóloga & Mediadora de Lectura</h6>
+            
+            <div class="lead-text" style="color: #444; line-height: 1.8;">
+                <p>Soy una apasionada por los libros en todas sus formas: desde las historias que contienen hasta los objetos que los resguardan. Mi trabajo une el **mundo de la lectura** con el oficio artesanal de la encuadernación.</p>
+                
+                <p>Creo libretas hechas a mano, únicas, pensadas para acompañar procesos creativos y cotidianos. Cada pieza está elaborada con dedicación, valorando los tiempos del trabajo manual.</p>
+                
+                <p>A través de mis talleres, comparto técnicas y el amor por el hacer con las manos, generando instancias de encuentro, aprendizaje y expresión esencial.</p>
+            </div>
+
+            <div class="mt-4">
+                <a href="#" class="btn btn-outline-dark btn-sm rounded-pill px-4 me-2">Saber más</a>
+                <a href="#" class="btn btn-link text-dark p-0"><i class="bi bi-instagram"></i></a>
             </div>
         </div>
     </div>
+</div>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!--FOOTER-->

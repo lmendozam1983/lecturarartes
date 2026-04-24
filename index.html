@@ -31,37 +31,24 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="galeria.html">Galería</a>
+                        <a class="nav-link px-3 active" href="galeria.html">Galería</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="quienessomos.html">Quienes somos</a>
-                    </li>
-                    <!--<li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Noticias
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="noticia1.html">Cerro Pintor</a></li>
-                            <li><a class="dropdown-item" href="noticia2.html">Cerro Manquehue</a></li>
-                            <li><a class="dropdown-item" href="noticia3.html">Cerro Tupungato</a></li>
-                            <li>
-                        </ul>
-                    </li>-->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="inscripcion.html" tabindex="-1"
-                            aria-disabled="true">Inscripción</a>
+                        <a class="nav-link px-3" href="quienessomos.html">Quiénes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="preguntas.html" tabindex="-1"
-                            aria-disabled="true">Preguntas</a>
+                        <a class="nav-link px-3" href="preguntas.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-dark rounded-pill px-4" href="inscripcion.html">Inscripción</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!--CARRUSEL-->
     <div class="container-fluid">
         <section class="hero">
@@ -131,52 +118,48 @@
         </div>
     </div>
     </div>
+
     <!--NOTICIAS-->
-    <div class="container-fluid">
-        <figure>
-            <blockquote class="blockquote">
-                <h1>Noticias <b>Lectura Artes</b></h1>
-            </blockquote>
-        </figure>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/authentic-book-club-scene.jpg" class="card-img-top" alt="agenda13">
-                    <div class="card-body">
-                        <h5 class="card-title">Talleres Guiados</h5>
-                        <p class="card-text">Aprende a hacer tus propios cuadernos. Puedes elegir entre distintos
-                            métodos de...</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal1">Ver más</button>
-                    </div>
+   <div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Noticias <span style="color: #cbbc83;">Lectura Artes</span></h2>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm custom-card">
+                <img src="img/authentic-book-club-scene.jpg" class="card-img-top" alt="Talleres" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Talleres Guiados</h5>
+                    <p class="card-text text-muted">Aprende a hacer tus propios cuadernos con métodos tradicionales.</p>
+                    <button class="btn btn-outline-dark rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">Ver más</button>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/agenda1414.jpeg" class="card-img-top" alt="agenda1414">
-                    <div class="card-body">
-                        <h5 class="card-title">Libreta Flores Prensada</h5>
-                        <p class="card-text">Papel reciclado caña de azúcar
-                            75 g.,...</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal2">Ver más</button>
-                    </div>
+        </div>
+        
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm custom-card">
+                <img src="img/agenda1414.jpeg" class="card-img-top" alt="Libreta" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Flores Prensadas</h5>
+                    <p class="card-text text-muted">Papel reciclado de caña de azúcar de 75g con detalles botánicos.</p>
+                    <button class="btn btn-outline-dark rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Ver más</button>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/agenda10.jpeg" class="card-img-top" alt="agenda10">
-                    <div class="card-body">
-                        <h5 class="card-title">Libreta Flores</h5>
-                        <p class="card-text">Papel amarillo claro
-                            Bond...</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal3">Ver más</button>
-                    </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm custom-card">
+                <img src="img/agenda10.jpeg" class="card-img-top" alt="Libreta" style="height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Colección Flores</h5>
+                    <p class="card-text text-muted">Papel amarillo claro Bond 80g, ideal para bocetos y notas.</p>
+                    <button class="btn btn-outline-dark rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">Ver más</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -242,29 +225,29 @@
     </div>
 
     <!--FOOTER-->
-<footer class="footer-light">
-    <div class="footer-container">
+    <footer class="footer-light">
+        <div class="footer-container">
 
-        <div class="footer-info">
-            <h3>Lectura Artes</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 742, Springfield</p>
-        </div>
-
-        <div class="footer-social">
-            <h4>Síguenos</h4>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/lecturartes/"><i class="fab fa-instagram"></i></a>
-                <!--<a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>-->
+            <div class="footer-info">
+                <h3>Lectura Artes</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 742, Springfield</p>
             </div>
+
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/lecturartes/"><i class="fab fa-instagram"></i></a>
+                    <!--<a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>-->
+                </div>
+            </div>
+
         </div>
 
-    </div>
-
-    <div class="footer-bottom">
-        <p>&copy; 2026 Lectura Artes - Todos los derechos reservados</p>
-    </div>
-</footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lectura Artes - Todos los derechos reservados</p>
+        </div>
+    </footer>
 
 </body>
 

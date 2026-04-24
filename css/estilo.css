@@ -13,31 +13,38 @@ header {
     padding: 15px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
+/* 1. Transiciones suaves para todos los enlaces del nav */
 .navbar .nav-link {
-    transition: background-color 0.3s ease, color 0.3s ease;
-    padding: 8px 12px;
-    border-radius: 6px; 
+    transition: all 0.3s ease;
+    font-weight: 500;
+    padding: 8px 16px; /* Espaciado interno horizontal */
+    border-radius: 8px; /* Bordes suaves para el efecto hover */
 }
 
+/* 2. Efecto hover sutil (un fondo muy suave al pasar el mouse) */
 .navbar .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.1); 
-    color: #000; 
+    background-color: rgba(0, 0, 0, 0.05); 
+    color: #000 !important; /* Color oscuro en modo claro */
+    transform: translateY(-1px); /* Pequeño levante */
+}
+
+/* 3. Estilo para el botón redondeado (Inscripción) */
+.rounded-pill {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.rounded-pill:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* 4. Ajuste del Logo para que no estire la barra */
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05); /* El logo crece un poquito al pasar el mouse */
 }
 
 .hero {
@@ -234,6 +241,28 @@ td {
     z-index: 10;
 }
 
+.card-img-top {
+    object-fit: cover;
+    height: 500px; 
+}
+
+/* Efecto suave para las cards */
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); 
+}
+
 .custom-card {
     transition: all 0.3s ease;
 }
@@ -268,11 +297,33 @@ td {
     object-position: center; 
 }
 
+.ls-2 {
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+}
+
+.lead-text p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.lead-text b, .lead-text strong {
+    color: #b08d57; 
+}
+
+.img-fluid.rounded-circle {
+    transition: transform 0.5s ease;
+}
+
+.img-fluid.rounded-circle:hover {
+    transform: scale(1.02) rotate(2deg);
+}
+
 .accordion-button:focus {
     box-shadow: none;
     border-color: rgba(0,0,0,.125);
 }
-
 
 .accordion-button:not(.collapsed) {
     background-color: #f8f9fa; 
